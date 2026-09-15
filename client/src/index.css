@@ -245,6 +245,10 @@ a { color: inherit; text-decoration: none; }
 .table th { text-align: left; padding: 9px 10px; color: #8ba09f; font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; border-bottom: 1px solid #e7efed; }
 .table td { padding: 12px 10px; font-size: 11px; color: #557278; border-bottom: 1px solid #edf2f0; }
 .table td strong { color: #2f5661; }
+.permission-state { display: inline-flex; align-items: center; white-space: nowrap; border-radius: 5px; padding: 4px 6px; font-size: 9px; font-weight: 800; }
+.permission-yes { background: #e3f4ef; color: #277c72; }
+.permission-restricted { background: #feebea; color: #b54d4c; }
+.permission-none { background: #f2f5f4; color: #98a8a5; }
 .drawer { position: fixed; inset: 0; background: #0a2d371c; z-index: 30; display: flex; justify-content: flex-end; }
 .drawer-panel { width: min(440px, 100%); background: #fff; height: 100%; box-shadow: -20px 0 40px #133f4b1c; padding: 23px; animation: slideIn .2s cubic-bezier(.23,1,.32,1); }
 .drawer-head { display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px; }
