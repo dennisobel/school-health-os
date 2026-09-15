@@ -4,6 +4,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home, { AuthPage, ParentPage, PortalPage, PrefectPage } from "./pages/Home";
 import { RolesPermissionsPage } from "./pages/Home";
+import MessagesPage from "./pages/Messages";
 import { Route, Switch } from "wouter";
 
 function AppRouter() {
@@ -12,6 +13,7 @@ function AppRouter() {
       <Route path="/" component={Home} />
       <Route path="/login" component={AuthPage} />
       <Route path="/portal/settings/roles-permissions" component={RolesPermissionsPage} />
+      <Route path="/portal/messages" component={MessagesPage} />
       <Route path="/portal/:section?" component={PortalPage} />
       <Route path="/parent" component={ParentPage} />
       <Route path="/prefect" component={PrefectPage} />
